@@ -45,4 +45,4 @@ ci/
 
 .eslintcache
 
-.github
+# .github
