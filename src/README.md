@@ -1,8 +1,18 @@
-<!-- This README file is going to be the one displayed on the Grafana.com website for your plugin. Uncomment and replace the content here before publishing.
 
-Remove any remaining comments before publishing as these may be displayed on Grafana.com -->
 
 # Smarter-Jaeger
+This plugin is designed to solve the common issue encountered when querying large datasets or wide time ranges from a Jaeger datasource. Under such conditions, the Jaeger backend may struggle to return complete results due to timeouts or memory constraints. The Jaeger Query Splitter Plugin helps mitigate this by breaking down large queries into smaller, more manageable requests and aggregating the results.
+
+## ✨ Features
+
+- Automatically splits large time-range queries into smaller intervals
+- Executes multiple parallel or sequential sub-queries
+- Aggregates and merges trace data for complete visibility
+- Reduces the chance of timeouts or partial responses
+- Configurable split interval and request behavior
+
+## Screenshots
+![alt text](image.png)
 
 <!-- To help maximize the impact of your README and improve usability for users, we propose the following loose structure:
 

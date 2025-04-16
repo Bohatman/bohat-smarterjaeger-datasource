@@ -7,17 +7,8 @@ interface Props extends DataSourcePluginOptionsEditorProps<MyDataSourceOptions, 
 
 export function ConfigEditor(props: Props) {
   const { onOptionsChange, options } = props;
-  const { jsonData, secureJsonFields, secureJsonData } = options;
+  const { jsonData } = options;
 
-  const onPathChange = (event: ChangeEvent<HTMLInputElement>) => {
-    onOptionsChange({
-      ...options,
-      jsonData: {
-        ...jsonData,
-        path: event.target.value,
-      },
-    });
-  };
 
   return (
     <>

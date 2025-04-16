@@ -13,7 +13,7 @@ export interface MyQuery extends DataQuery {
 
 export const DEFAULT_QUERY: Partial<MyQuery> = {
   service: "",
-  limit: 500,
+  limit: 100,
   operation: "ALL"
 };
 

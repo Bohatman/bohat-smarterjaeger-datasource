@@ -128,7 +128,7 @@ export function QueryEditor({ query, onChange, onRunQuery }: Props) {
           }}
         />
       </InlineField>
-      <InlineField label="Limit">
+      <InlineField label="Limit" tooltip={"Max number of results to return (maxParallel=10 and limit=10 mean total data points = 100)"} >
         <input
           type="number"
           value={query.limit}

@@ -5,11 +5,11 @@
   "id": "bohat-smarterjaeger-datasource",
   "metrics": true,
   "info": {
-    "description": "",
+    "description": "Jaeger datasource for Grafana with parallel request.",
     "author": {
       "name": "Bohat"
     },
-    "keywords": ["datasource"],
+    "keywords": ["datasource","jaeger"],
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
