@@ -7,7 +7,6 @@ import {
   DataSourceInstanceSettings,
   createDataFrame,
   FieldType,
-  DataFrame,
 } from '@grafana/data';
 
 import { MyQuery, MyDataSourceOptions, DEFAULT_QUERY, DataSourceResponse } from './types';
