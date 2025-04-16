@@ -4,7 +4,7 @@
 
 Initial release.
 
-## 2.0.1
+## 2.0.0
 ### ✨ Features
 - Automatically splits large time-range queries into smaller intervals
 - Executes multiple parallel or sequential sub-queries
