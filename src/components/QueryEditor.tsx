@@ -37,6 +37,8 @@ export function QueryEditor({ query, onChange, onRunQuery }: Props) {
         setTagError(false);
       }
     }
+    onChange({ ...query, tags: v });
+    onRunQuery();
     setTags(v);
   };
 

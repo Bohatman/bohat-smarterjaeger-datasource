@@ -14,7 +14,8 @@ export interface MyQuery extends DataQuery {
 export const DEFAULT_QUERY: Partial<MyQuery> = {
   service: "",
   limit: 100,
-  operation: "ALL"
+  operation: "ALL",
+  tags: [],
 };
 
 export interface DataPoint {

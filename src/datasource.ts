@@ -48,16 +48,14 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
   }
   processTages(tags: string[]) {
     let tagMap: any = {};
-    if(!tags === undefined){
-      tags.forEach((tag) => {
-        let parts = tag.split('=');
-        if (parts.length === 2) {
-          let key = parts[0].trim();
-          let value = parts[1].trim();
-          tagMap[key] = value;
-        }
-      });
-    }
+    tags.forEach((tag) => {
+      let parts = tag.split('=');
+      if (parts.length === 2) {
+        let key = parts[0].trim();
+        let value = parts[1].trim();
+        tagMap[key] = value;
+      }
+    });
     return tagMap;
   }
   filterUndifineFromMap(map: any) {
@@ -93,10 +91,8 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
     if (query.minDuration) {
       params['minDuration'] = query.minDuration;
     }
-    if (query.tags) {
-      let tags = this.processTages(query.tags);
-      params = { ...params, ...tags };
-    }
+    let tags = this.processTages(query.tags);
+    params["tags"] = JSON.stringify(tags);
     if(query.limit){
       params['limit'] = query.limit;
     }
@@ -163,6 +159,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       cloneParams['start'] = fromNanos;
       cloneParams['end'] = toNanos;
       const queryString = new URLSearchParams(cloneParams as any).toString();
+      console.log(queryString);
       let response: FetchResponse<DataSourceResponse> | null = null;
       const results: any[] = [];
       let isSuccess = false;
@@ -229,6 +226,7 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       const target = options.targets[i];
       const query = defaults(target, DEFAULT_QUERY);
       let baseParams = this.processQueryParams(query);
+      console.log(baseParams)
       baseParams['lookback'] = "custom";
       const extractTags = this.arrayToMap(query.extractTags);
       let allPromises: any = [];
