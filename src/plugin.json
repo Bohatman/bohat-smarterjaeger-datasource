@@ -16,8 +16,8 @@
     },
     "links": [],
     "screenshots": [],
-    "version": "%VERSION%",
-    "updated": "%TODAY%"
+    "version": "2.0.0",
+    "updated": "2025-04-19"
   },
   "dependencies": {
     "grafanaDependency": ">=10.4.0",
