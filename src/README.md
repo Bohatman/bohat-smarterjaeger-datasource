@@ -14,10 +14,10 @@ This plugin is designed to solve the common issue encountered when querying larg
 
 ## Screenshots
 ### Datasource
-![datasource](https://github.com/Bohatman/bohat-smarterjaeger-datasource/blob/main/src/img/screenshot/datasource.png)
+![datasource](https://github.com/Bohatman/bohat-smarterjaeger-datasource/blob/main/src/img/screenshots/datasource.png)
 ### Config
-![config](https://github.com/Bohatman/bohat-smarterjaeger-datasource/blob/main/src/img/screenshot/config.png)
+![config](https://github.com/Bohatman/bohat-smarterjaeger-datasource/blob/main/src/img/screenshots/config.png)
 ### Query
-![query](https://github.com/Bohatman/bohat-smarterjaeger-datasource/blob/main/src/img/screenshot/query.png)
+![query](https://github.com/Bohatman/bohat-smarterjaeger-datasource/blob/main/src/img/screenshots/query.png)
 ### Data
-![query](https://github.com/Bohatman/bohat-smarterjaeger-datasource/blob/main/src/img/screenshot/data.png)
+![query](https://github.com/Bohatman/bohat-smarterjaeger-datasource/blob/main/src/img/screenshots/data.png)
