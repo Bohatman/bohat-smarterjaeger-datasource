@@ -159,7 +159,6 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       cloneParams['start'] = fromNanos;
       cloneParams['end'] = toNanos;
       const queryString = new URLSearchParams(cloneParams as any).toString();
-      console.log(queryString);
       let response: FetchResponse<DataSourceResponse> | null = null;
       const results: any[] = [];
       let isSuccess = false;
@@ -226,7 +225,6 @@ export class DataSource extends DataSourceApi<MyQuery, MyDataSourceOptions> {
       const target = options.targets[i];
       const query = defaults(target, DEFAULT_QUERY);
       let baseParams = this.processQueryParams(query);
-      console.log(baseParams)
       baseParams['lookback'] = "custom";
       const extractTags = this.arrayToMap(query.extractTags);
       let allPromises: any = [];

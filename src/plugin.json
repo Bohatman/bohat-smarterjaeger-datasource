@@ -14,19 +14,24 @@
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
-    "links": [],
+    "links": [
+      {
+        "name": "Project site",
+        "url": "https://github.com/Bohatman/bohat-smarterjaeger-datasource/"
+      }
+    ],
     "screenshots": [
       {
         "name": "Jaeger",
-        "path": "img/screenshot/datasource.png"
+        "path": "img/screenshots/datasource.png"
       },
       {
         "name": "Config",
-        "path": "img/screenshot/config.png"
+        "path": "img/screenshots/config.png"
       },
       {
         "name": "Data",
-        "path": "img/screenshot/data.png"
+        "path": "img/screenshots/data.png"
       }
     ],
     "version": "2.0.0",

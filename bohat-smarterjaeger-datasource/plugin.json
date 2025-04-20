@@ -5,26 +5,41 @@
     "id": "bohat-smarterjaeger-datasource",
     "metrics": true,
     "info": {
-        "description": "Jaeger datasource for Grafana with parallel request.",
-        "author": {
-            "name": "Bohat"
+      "description": "Jaeger datasource for Grafana with parallel request.",
+      "author": {
+        "name": "Bohat"
+      },
+      "keywords": ["datasource","jaeger"],
+      "logos": {
+        "small": "img/logo.svg",
+        "large": "img/logo.svg"
+      },
+      "links": [
+        {
+          "name": "Project site",
+          "url": "https://github.com/Bohatman/bohat-smarterjaeger-datasource/"
+        }
+      ],
+      "screenshots": [
+        {
+          "name": "Jaeger",
+          "path": "img/screenshots/datasource.png"
         },
-        "keywords": [
-            "datasource",
-            "jaeger"
-        ],
-        "logos": {
-            "small": "img/logo.svg",
-            "large": "img/logo.svg"
+        {
+          "name": "Config",
+          "path": "img/screenshots/config.png"
         },
-        "links": [],
-        "screenshots": [],
-        "version": "2.0.0",
-        "updated": "2025-04-16"
+        {
+          "name": "Data",
+          "path": "img/screenshots/data.png"
+        }
+      ],
+      "version": "2.0.0",
+      "updated": "2025-04-19"
     },
     "dependencies": {
-        "grafanaDependency": ">=10.4.0",
-        "plugins": []
-    },
-    "buildMode": "production"
-}
+      "grafanaDependency": ">=10.4.0",
+      "plugins": []
+    }
+  }
+  
