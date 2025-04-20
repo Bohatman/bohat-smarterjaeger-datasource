@@ -15,7 +15,20 @@
       "large": "img/logo.svg"
     },
     "links": [],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "name": "Jaeger",
+        "path": "img/screenshot/datasource.png"
+      },
+      {
+        "name": "Config",
+        "path": "img/screenshot/config.png"
+      },
+      {
+        "name": "Data",
+        "path": "img/screenshot/data.png"
+      }
+    ],
     "version": "2.0.0",
     "updated": "2025-04-19"
   },
